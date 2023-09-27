@@ -1,0 +1,27 @@
+{
+  "name": "phyzzquizz",
+  "version": "1.0.0",
+  "description": "Este é uma aplicação de quiz sobre questões de Física do Ensino Médio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomoutsuki/PhyzzQuizz.git"
+  },
+  "keywords": [
+    "Quiz",
+    "Physics",
+    "Fisica"
+  ],
+  "author": "PhyzzQuizz team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomoutsuki/PhyzzQuizz/issues"
+  },
+  "homepage": "https://github.com/tomoutsuki/PhyzzQuizz#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
