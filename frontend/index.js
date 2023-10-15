@@ -87,7 +87,7 @@ const createQuest = (question) => {
 
   //Colocando o ícone
   const answeredIcon = document.createElement("img");
-  answeredIcon.innerHTML = 'src="../frontend/assets/checklist.png"';
+  answeredIcon.setAttribute("src", "../frontend/assets/checklist.png");
   questionAnswered.appendChild(answeredIcon);
 
   //Colocando o texto de respondido
@@ -141,14 +141,13 @@ console.log(inputQuestions.length);
   createQuest(inputQuestions[i]);
 }*/
 
-switch(SortedEH) {
-
+switch (SortedEH) {
   case "ascending":
     diffSort();
     for (let i = inputQuestions.length - 1; i > 0; i--) {
       createQuest(inputQuestions[i]);
     }
-    sortButtonAscending.style.display="block";
+    sortButtonAscending.style.display = "block";
     break;
 
   case "descending":

@@ -1,146 +1,154 @@
 {
-   "questoes": [
-        {
-        "numero":"1",
-        "dificuldade":"1",
-        "conteudo":"(FUEL-PR) Um automóvel mantém uma velocidade escalar constante de 72,0 km/h. Em 1h10min ele percorre, em quilômetros, uma distância de:",
-        "previa":"Um automóvel mantém uma velocidade escalar constante de 72,0 km/h...",
-        "respondido":"false",
-        "resposta":"a",
-        "alternativas":{
-            "a": "79,2",
-            "b": "80,0",
-            "c": "82,4",
-            "d": "84,0",
-            "e": "90,0"
-        }
+  "questoes": [
+    {
+      "numero": 1,
+      "dificuldade": 1,
+      "conteudo": "(FUEL-PR) Um automóvel mantém uma velocidade escalar constante de 72,0 km/h. Em 1h10min ele percorre, em quilômetros, uma distância de:",
+      "previa": "Um automóvel mantém uma velocidade escalar constante de 72,0 km/h...",
+      "respondido": true,
+      "resposta": "a",
+      "alternativas": {
+        "a": "79,2",
+        "b": "80,0",
+        "c": "82,4",
+        "d": "84,0",
+        "e": "90,0"
+      }
     },
-        {"numero":"2",
-        "dificuldade":"2",
-        "conteudo":"(Cesgranrio) Uma patrulha rodoviária mede o tempo que cada veículo leva para percorrer um trecho de 400 metros de estrada. Um automóvel percorre a primeira metade do trecho com velocidade de 140 km/h. Sendo de 80 km/h a velocidade-limite permitida, qual deve ser a maior velocidade média do carro na segunda metade do trecho para evitar ser multado?",
-        "previa":"Uma patrulha rodoviária mede o tempo que cada veículo leva para percorrer um trecho de 400...",
-        "respondido":"false",
-        "resposta":"c",
-        "alternativas":{
-            "a": "20 km/h",
-            "b": "48 km/h",
-            "c": "56 km/h",
-            "d": "60 km/h",
-            "e": "80 km/h"
-        }
+    {
+      "numero": 2,
+      "dificuldade": 2,
+      "conteudo": "(Cesgranrio) Uma patrulha rodoviária mede o tempo que cada veículo leva para percorrer um trecho de 400 metros de estrada. Um automóvel percorre a primeira metade do trecho com velocidade de 140 km/h. Sendo de 80 km/h a velocidade-limite permitida, qual deve ser a maior velocidade média do carro na segunda metade do trecho para evitar ser multado?",
+      "previa": "Uma patrulha rodoviária mede o tempo que cada veículo leva para percorrer um ...",
+      "respondido": false,
+      "resposta": "c",
+      "alternativas": {
+        "a": "20 km/h",
+        "b": "48 km/h",
+        "c": "56 km/h",
+        "d": "60 km/h",
+        "e": "80 km/h"
+      }
     },
-        {"numero":"3",
-        "dificuldade":"3",
-        "conteudo":"(UFRN) Uma partícula percorre uma trajetória retilínea AB, onde M é o ponto médio, sempre no mesmo sentido e com movimento uniforme em cada um dos trechos AM e MB. A velocidade da partícula no trecho AM é de 3,0 m/s e no trecho MB é de 6,0 m/s. A velocidade média entre os pontos A e B vale:",
-        "previa":"Uma partícula percorre uma trajetória retilínea AB...",
-        "respondido":"false",
-        "resposta":"a",
-        "alternativas":{
-            "a": "4,0 m/s",
-            "b": "4,5 m/s",
-            "c": "6,0 m/s",
-            "d": "9,0 m/s",
-            "e": "18 m/s"
-        }
+    {
+      "numero": 3,
+      "dificuldade": 3,
+      "conteudo": "(UFRN) Uma partícula percorre uma trajetória retilínea AB, onde M é o ponto médio, sempre no mesmo sentido e com movimento uniforme em cada um dos trechos AM e MB. A velocidade da partícula no trecho AM é de 3,0 m/s e no trecho MB é de 6,0 m/s. A velocidade média entre os pontos A e B vale:",
+      "previa": "Uma partícula percorre uma trajetória retilínea AB...",
+      "respondido": false,
+      "resposta": "a",
+      "alternativas": {
+        "a": "4,0 m/s",
+        "b": "4,5 m/s",
+        "c": "6,0 m/s",
+        "d": "9,0 m/s",
+        "e": "18 m/s"
+      }
     },
-        {"numero":"4",
-        "dificuldade":"1",
-        "conteudo":"(Vunesp-SP) Assinale a alternativa que apresenta o enunciado da Lei de Inércia, também conhecida como Primeira Lei de de Newton.",
-        "previa":"Assinale a alternativa que apresenta o enunciado da Lei de Inércia...",
-        "respondido":"false",
-        "resposta":"e",
-        "alternativas":{
-            "a": "Qualquer planeta gira em torno do Sol descrevendo uma órbita elíptica, da qual o Sol ocupa um dos focos.",
-            "b": "Dois corpos quaisquer se atraem com uma força proporcional ao produto de suas massas e inversamente proporcional ao quadrado da distância entre eles.",
-            "c": "Quando um corpo exerce uma força sobre outro, este reage sobre o primeiro com uma força de mesma intensidade e direção, mas de sentido contrário.",
-            "d": "A aceleração que um corpo adquire é diretamente proporcional à resultante das forças que nele atuam, e tem mesma direção e sentido dessa resultante.",
-            "e": "Todo corpo continua em seu estado de repouso ou de movimento uniforme em uma linha reta, a menos que sobre ele estejam agindo forças com resultante não nulas."
-        }
+    {
+      "numero": 4,
+      "dificuldade": 1,
+      "conteudo": "(Vunesp-SP) Assinale a alternativa que apresenta o enunciado da Lei de Inércia, também conhecida como Primeira Lei de de Newton.",
+      "previa": "Assinale a alternativa que apresenta o enunciado da Lei de Inércia...",
+      "respondido": false,
+      "resposta": "e",
+      "alternativas": {
+        "a": "Qualquer planeta gira em torno do Sol descrevendo uma órbita elíptica, da qual o Sol ocupa um dos focos.",
+        "b": "Dois corpos quaisquer se atraem com uma força proporcional ao produto de suas massas e inversamente proporcional ao quadrado da distância entre eles.",
+        "c": "Quando um corpo exerce uma força sobre outro, este reage sobre o primeiro com uma força de mesma intensidade e direção, mas de sentido contrário.",
+        "d": "A aceleração que um corpo adquire é diretamente proporcional à resultante das forças que nele atuam, e tem mesma direção e sentido dessa resultante.",
+        "e": "Todo corpo continua em seu estado de repouso ou de movimento uniforme em uma linha reta, a menos que sobre ele estejam agindo forças com resultante não nulas."
+      }
     },
-        {"numero":"5",
-        "dificuldade":"1",
-        "conteudo":"(UFMG) A Terra atrai um pacote de arroz com uma força de 49 N. Pode-se então afirmar que o pacote de arroz:",
-        "previa":"A Terra atrai um pacote de...",
-        "respondido":"false",
-        "resposta":"a",
-        "alternativas":{
-            "a": "atrai a Terra com uma força de 49 N.",
-            "b": "atrai a Terra com uma força menor do que 49 N.",
-            "c": "não exerce força nenhuma sobre a Terra.",
-            "d": "repele a Terra com uma força de 49 N.",
-            "e": "repele a Terra com uma força menor do que 49 N."
-        }
+    {
+      "numero": 5,
+      "dificuldade": 1,
+      "conteudo": "(UFMG) A Terra atrai um pacote de arroz com uma força de 49 N. Pode-se então afirmar que o pacote de arroz:",
+      "previa": "A Terra atrai um pacote de...",
+      "respondido": false,
+      "resposta": "a",
+      "alternativas": {
+        "a": "atrai a Terra com uma força de 49 N.",
+        "b": "atrai a Terra com uma força menor do que 49 N.",
+        "c": "não exerce força nenhuma sobre a Terra.",
+        "d": "repele a Terra com uma força de 49 N.",
+        "e": "repele a Terra com uma força menor do que 49 N."
+      }
     },
-        {"numero":"6",
-        "dificuldade":"3",
-        "conteudo":"(Osec-SP) Um elevador e sua carga têm massa de 1 000 kg. Quando desce com velocidade de 4,0 m/s e e freado com aceleração constante, ele para após 2,0 s. Quando desce em movimento retardado, a força de tração no cabo do elevador, em newtons, vale:  (adote  g = 10 ms2)",
-        "previa":"Um elevador e sua carga têm massa de 1 000 kg. Quando...",
-        "respondido":"false",
-        "resposta":"c",
-        "alternativas":{
-            "a": "8000 N",
-            "b": "10000 N",
-            "c": "12000 N",
-            "d": "14000 N",
-            "e": "16000 N"
-        }
+    {
+      "numero": 6,
+      "dificuldade": 3,
+      "conteudo": "(Osec-SP) Um elevador e sua carga têm massa de 1 000 kg. Quando desce com velocidade de 4,0 m/s e e freado com aceleração constante, ele para após 2,0 s. Quando desce em movimento retardado, a força de tração no cabo do elevador, em newtons, vale:  (adote  g = 10 ms2)",
+      "previa": "Um elevador e sua carga têm massa de 1 000 kg. Quando...",
+      "respondido": false,
+      "resposta": "c",
+      "alternativas": {
+        "a": "8000 N",
+        "b": "10000 N",
+        "c": "12000 N",
+        "d": "14000 N",
+        "e": "16000 N"
+      }
     },
-        {"numero":"7",
-        "dificuldade":"2",
-        "conteudo":"(UERJ) Um submarino encontra-se a uma profundidade de 50 m. Para que a tripulação sobreviva, um descompressor mantém o seu interior a uma pressão constante igual à pressão atmosférica ao nível do mar. Considerando-se 1 atm igual a   10 Pa, a diferença entre a pressão, junto as suas paredes, fora e dentro do submarino, é da ordem de:",
-        "previa":"Um submarino encontra-se a uma profundidade de 50 m...",
-        "respondido":"false",
-        "resposta":"c",
-        "alternativas":{
-            "a": "0,1",
-            "b": "1,0",
-            "c": "5,0",
-            "d": "50,0 ",
-            "e": "n.d.a."
-        }
+    {
+      "numero": 7,
+      "dificuldade": 2,
+      "conteudo": "(UERJ) Um submarino encontra-se a uma profundidade de 50 m. Para que a tripulação sobreviva, um descompressor mantém o seu interior a uma pressão constante igual à pressão atmosférica ao nível do mar. Considerando-se 1 atm igual a   10 Pa, a diferença entre a pressão, junto as suas paredes, fora e dentro do submarino, é da ordem de:",
+      "previa": "Um submarino encontra-se a uma profundidade de 50 m...",
+      "respondido": false,
+      "resposta": "c",
+      "alternativas": {
+        "a": "0,1",
+        "b": "1,0",
+        "c": "5,0",
+        "d": "50,0 ",
+        "e": "n.d.a."
+      }
     },
-        {"numero":"8",
-        "dificuldade":"1",
-        "conteudo":"(PUC-SP) Um barril contém óleo até 1/4 de sua altura. Após uma chuva intensa, ele fica totalmente cheio, sem chegar a derramar. Se a altura do barril é 1 m, a pressão no fundo, após a chuva, devida só a seu conteúdo, será de: (dado: m (óleo) = 0,8 g/cm3.)",
-        "previa":"Um barril contém óleo até 1/4 de sua altura. Após uma chuva...",
-        "respondido":"false",
-        "resposta":"d",
-        "alternativas":{
-            "a": "950 N/m2",
-            "b": "9000 N/m2",
-            "c": "1800 N/m2",
-            "d": "9500 N/m2",
-            "e": "900 N/m2"
-        }
+    {
+      "numero": 8,
+      "dificuldade": 1,
+      "conteudo": "(PUC-SP) Um barril contém óleo até 1/4 de sua altura. Após uma chuva intensa, ele fica totalmente cheio, sem chegar a derramar. Se a altura do barril é 1 m, a pressão no fundo, após a chuva, devida só a seu conteúdo, será de: (dado: m (óleo) = 0,8 g/cm3.)",
+      "previa": "Um barril contém óleo até 1/4 de sua altura. Após uma chuva...",
+      "respondido": false,
+      "resposta": "d",
+      "alternativas": {
+        "a": "950 N/m2",
+        "b": "9000 N/m2",
+        "c": "1800 N/m2",
+        "d": "9500 N/m2",
+        "e": "900 N/m2"
+      }
     },
-        {"numero":"9",
-        "dificuldade":"3",
-        "conteudo":"(FAFEOD 94) Um sistema gasoso sofre uma compressão adiabática (volume diminui e não troca calor com o meio ambiente). Sejam: t = trabalho realizado sobre o gás e DU = variação de sua energia interna. Para essa transformação, é CORRET0 afirmar que:",
-        "previa":"Um sistema gasoso sofre uma compressão adiabática...",
-        "respondido":"false",
-        "resposta":"d",
-        "alternativas":{
-            "a": "a pressão do gás diminui.",
-            "b": "DU = 0 e t < 0.",
-            "c": "a transformação é isotérmica.",
-            "d": "a temperatura do gás aumenta.",
-            "e": "DU < 0 e t = 0."
-        }
+    {
+      "numero": 9,
+      "dificuldade": 3,
+      "conteudo": "(FAFEOD 94) Um sistema gasoso sofre uma compressão adiabática (volume diminui e não troca calor com o meio ambiente). Sejam: t = trabalho realizado sobre o gás e DU = variação de sua energia interna. Para essa transformação, é CORRET0 afirmar que:",
+      "previa": "Um sistema gasoso sofre uma compressão adiabática...",
+      "respondido": false,
+      "resposta": "d",
+      "alternativas": {
+        "a": "a pressão do gás diminui.",
+        "b": "DU = 0 e t < 0.",
+        "c": "a transformação é isotérmica.",
+        "d": "a temperatura do gás aumenta.",
+        "e": "DU < 0 e t = 0."
+      }
     },
-        {"numero":"10",
-        "dificuldade":"3",
-        "conteudo":"(ITA-SP) Das afirmações abaixo:I. A energia interna de um gás ideal depende só da pressão.II. Quando um gás passa de um estado 1 para outro estado 2, o calor trocado é o mesmo qualquer que seja o processo.III. Quando um gás passa de um estado 1 para outro estado 2, a variação de energia interna é a mesma qualquer que seja o processo.IV. Um gás submetido a um processo quase-estático não realiza trabalho.V. O calor específico de uma substância não depende do processo como ela é aquecida.VI. Quando um gás ideal recebe calor e não há variação de volume, a variação de energia interna é igual ao calor recebido.VII. Numa expansão isotérmica de um gás ideal o trabalho realizado é sempre menor do que o calor absorvido.As duas corretas são:",
-        "previa":"Das afirmações abaixo:I. A energia interna de um gás ideal depende só da...",
-        "respondido":"false",
-        "resposta":"e",
-        "alternativas":{
-            "a": "II e III.",
-            "b": "III e IV.",
-            "c": "III e V.",
-            "d": "I e VII.",
-            "e": "III e VI."
-        }
+    {
+      "numero": 10,
+      "dificuldade": 3,
+      "conteudo": "(ITA-SP) Das afirmações abaixo:I. A energia interna de um gás ideal depende só da pressão.II. Quando um gás passa de um estado 1 para outro estado 2, o calor trocado é o mesmo qualquer que seja o processo.III. Quando um gás passa de um estado 1 para outro estado 2, a variação de energia interna é a mesma qualquer que seja o processo.IV. Um gás submetido a um processo quase-estático não realiza trabalho.V. O calor específico de uma substância não depende do processo como ela é aquecida.VI. Quando um gás ideal recebe calor e não há variação de volume, a variação de energia interna é igual ao calor recebido.VII. Numa expansão isotérmica de um gás ideal o trabalho realizado é sempre menor do que o calor absorvido.As duas corretas são:",
+      "previa": "Das afirmações abaixo:I. A energia interna de um gás ideal depende só da...",
+      "respondido": false,
+      "resposta": "e",
+      "alternativas": {
+        "a": "II e III.",
+        "b": "III e IV.",
+        "c": "III e V.",
+        "d": "I e VII.",
+        "e": "III e VI."
+      }
     }
-   ]
-    
+  ]
 }
