@@ -11,13 +11,11 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
-console.log(getParameterByName('fruta'));
+let questao = parseInt(getParameterByName('questao'), 10) - 1;
 
-
-let numero_aleatorio = Math.floor(Math.random() * 10);
-let numero = data.questoes[numero_aleatorio].numero;
-let conteudo = data.questoes[numero_aleatorio].conteudo;
-let alternativas = data.questoes[numero_aleatorio].alternativas;
+let numero = data.questoes[questao].numero;
+let conteudo = data.questoes[questao].conteudo;
+let alternativas = data.questoes[questao].alternativas;
 
 var numero_questao = document.getElementById("numero_questao");
 numero_questao.textContent=numero;
