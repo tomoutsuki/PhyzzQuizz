@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Linkando CSS-->
+    <link rel="stylesheet" href="../frontend/index.css" />
+    <!--Linkando JS-->
+    <script src="../backend/index.js" defer></script>
+    <title>Homepage</title>
+  </head>
+  <header>
+    <div class="logo-container">
+        <a href="index.html">
+            <img class="logo" src="assets/logo/phizzquizz.svg" alt="logo">
+        </a>
+        <a href="#">
+            <img class="logo-text" src="assets/logo/phyzzquizz-text.png">
+        </a>
+    </div>
+    <img class="profile-icon" src="assets/profile.png" alt="profile">
+  </header>
+  <body>
+    <div class="questionary-container">
+      <button class="sort-button">
+        <img src="../frontend/assets/sort.png" />
+      </button>
+      <div id="question-list">
+        <div class="question">
+          <div class="question-num">
+            <h1>Questão 1</h1>
+          </div>
+          <button class="question-easy">
+            <h2>Fácil</h2>
+          </button>
+          <button class="question-medium hide">
+            <h2>Médio</h2>
+          </button>
+          <button class="question-hard hide">
+            <h2>Difícil</h2>
+          </button>
+          <div class="question-answered">
+            <img src="../frontend/assets/checklist.png" />
+            <h2>Respondido</h2>
+          </div>
+          <div class="question-preview">
+            <h3>Um carro viaja a 55 Km/h...</h3>
+          </div>
+          <button class="answer-question" onclick="location.href='question.html?questao=1'">
+            <h3>Responder</h3>
+          </button>
+        </div>
+        <div class="question">
+          <div class="question-num">
+            <h1>Questão 2</h1>
+          </div>
+          <button class="question-easy">
+            <h2>Fácil</h2>
+          </button>
+          <button class="question-medium hide">
+            <h2>Médio</h2>
+          </button>
+          <button class="question-hard hide">
+            <h2>Difícil</h2>
+          </button>
+          <div class="question-answered hide">
+            <img src="../frontend/assets/checklist.png" />
+            <h2>Respondido</h2>
+          </div>
+          <div class="question-preview">
+            <h3>Um carro viaja a 55 Km/h...</h3>
+          </div>
+          <button class="answer-question" onclick="location.href='question.html?questao=2'">
+            <h3>Responder</h3>
+          </button>
+        </div>
+        <div class="question">
+          <div class="question-num">
+            <h1>Questão 3</h1>
+          </div>
+          <button class="question-easy">
+            <h2>Fácil</h2>
+          </button>
+          <button class="question-medium hide">
+            <h2>Médio</h2>
+          </button>
+          <button class="question-hard hide">
+            <h2>Difícil</h2>
+          </button>
+          <div class="question-answered hide">
+            <img src="../frontend/assets/checklist.png" />
+            <h2>Respondido</h2>
+          </div>
+          <div class="question-preview">
+            <h3>Um carro viaja a 55 Km/h...</h3>
+          </div>
+          <button class="answer-question" onclick="location.href='question.html?questao=3'">
+            <h3>Responder</h3>
+          </button>
+        </div>
+        <div class="question">
+          <div class="question-num">
+            <h1>Questão 4</h1>
+          </div>
+          <button class="question-easy">
+            <h2>Fácil</h2>
+          </button>
+          <button class="question-medium hide">
+            <h2>Médio</h2>
+          </button>
+          <button class="question-hard hide">
+            <h2>Difícil</h2>
+          </button>
+          <div class="question-answered hide">
+            <img src="../frontend/assets/checklist.png" />
+            <h2>Respondido</h2>
+          </div>
+          <div class="question-preview">
+            <h3>Um carro viaja a 55 Km/h...</h3>
+          </div>
+          <button class="answer-question" onclick="location.href='question.html?questao=4'">
+            <h3>Responder</h3>
+          </button>
+        </div>
+        <div class="question">
+          <div class="question-num" data-num="5">
+            <h1>Questão 5</h1>
+          </div>
+          <button class="question-easy">
+            <h2>Fácil</h2>
+          </button>
+          <button class="question-medium hide">
+            <h2>Médio</h2>
+          </button>
+          <button class="question-hard hide">
+            <h2>Difícil</h2>
+          </button>
+          <div class="question-answered hide">
+            <img src="../frontend/assets/checklist.png" />
+            <h2>Respondido</h2>
+          </div>
+          <div class="question-preview">
+            <h3>Um carro viaja a 55 Km/h...</h3>
+          </div>
+          <button class="answer-question" onclick="location.href='question.html?questao=5'">
+            <h3>Responder</h3>
+          </button>
+        </div>
+        <div class="question">
+          <div class="question-num">
+            <h1>Questão 6</h1>
+          </div>
+          <button class="question-easy hide">
+            <h2>Fácil</h2>
+          </button>
+          <button class="question-medium">
+            <h2>Médio</h2>
+          </button>
+          <button class="question-hard hide">
+            <h2>Difícil</h2>
+          </button>
+          <div class="question-answered hide">
+            <img src="../frontend/assets/checklist.png" />
+            <h2>Respondido</h2>
+          </div>
+          <div class="question-preview">
+            <h3>Um carro viaja a 55 Km/h...</h3>
+          </div>
+          <button class="answer-question" onclick="location.href='question.html?questao=6'">
+            <h3>Responder</h3>
+          </button>
+        </div>
+        <div class="question">
+          <div class="question-num">
+            <h1>Questão 7</h1>
+          </div>
+          <button class="question-easy">
+            <h2>Fácil</h2>
+          </button>
+          <button class="question-medium hide">
+            <h2>Médio</h2>
+          </button>
+          <button class="question-hard hide">
+            <h2>Difícil</h2>
+          </button>
+          <div class="question-answered hide">
+            <img src="../frontend/assets/checklist.png" />
+            <h2>Respondido</h2>
+          </div>
+          <div class="question-preview">
+            <h3>Um carro viaja a 55 Km/h...</h3>
+          </div>
+          <button class="answer-question" onclick="location.href='question.html?questao=7'">
+            <h3>Responder</h3>
+          </button>
+        </div>
+        <div class="question">
+          <div class="question-num">
+            <h1>Questão 8</h1>
+          </div>
+          <button class="question-easy hide">
+            <h2>Fácil</h2>
+          </button>
+          <button class="question-medium hide">
+            <h2>Médio</h2>
+          </button>
+          <button class="question-hard">
+            <h2>Difícil</h2>
+          </button>
+          <div class="question-answered hide">
+            <img src="../frontend/assets/checklist.png" />
+            <h2>Respondido</h2>
+          </div>
+          <div class="question-preview">
+            <h3>Um carro viaja a 55 Km/h...</h3>
+          </div>
+          <button class="answer-question" onclick="location.href='question.html?questao=8'">
+            <h3>Responder</h3>
+          </button>
+        </div>
+        <div class="question">
+          <div class="question-num">
+            <h1>Questão 9</h1>
+          </div>
+          <button class="question-easy">
+            <h2>Fácil</h2>
+          </button>
+          <button class="question-medium hide">
+            <h2>Médio</h2>
+          </button>
+          <button class="question-hard hide">
+            <h2>Difícil</h2>
+          </button>
+          <div class="question-answered hide">
+            <img src="../frontend/assets/checklist.png" />
+            <h2>Respondido</h2>
+          </div>
+          <div class="question-preview">
+            <h3>Um carro viaja a 55 Km/h...</h3>
+          </div>
+          <button class="answer-question" onclick="location.href='question.html?questao=9'">
+            <h3>Responder</h3>
+          </button>
+        </div>
+        <div class="question">
+          <div class="question-num">
+            <h1>Questão 10</h1>
+          </div>
+          <button class="question-easy">
+            <h2>Fácil</h2>
+          </button>
+          <button class="question-medium hide">
+            <h2>Médio</h2>
+          </button>
+          <button class="question-hard hide">
+            <h2>Difícil</h2>
+          </button>
+          <div class="question-answered hide">
+            <img src="../frontend/assets/checklist.png" />
+            <h2>Respondido</h2>
+          </div>
+          <div class="question-preview">
+            <h3>Um carro viaja a 55 Km/h...</h3>
+          </div>
+          <button class="answer-question" onclick="location.href='question.html?questao=10'">
+            <h3>Responder</h3>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,10 +1,20 @@
 import data from './questoes.json' assert {type: 'json'};
 console.log(data.questoes);
 
-let numero_aleatorio = Math.floor(Math.random() * 10);
-let numero = data.questoes[numero_aleatorio].numero;
-let conteudo = data.questoes[numero_aleatorio].conteudo;
-let alternativas = data.questoes[numero_aleatorio].alternativas;
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+let id_questao = getParameterByName('questao')-1;
+let numero = data.questoes[id_questao].numero;
+let conteudo = data.questoes[id_questao].conteudo;
+let alternativas = data.questoes[id_questao].alternativas;
 
 var numero_questao = document.getElementById("numero_questao");
 numero_questao.textContent=numero;

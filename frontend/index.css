@@ -1,0 +1,224 @@
+/*Geral*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+header {
+    position: fixed;
+    margin: 0 0 0 0;
+    background-color: #1F66E5;
+    display: flex;
+    height: 78px;
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22px 0 48px;
+
+    z-index: 4;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 66px;
+    height: auto;
+}
+
+.logo-text {
+    height: 36px;
+    width: auto;
+}
+
+.profile-icon {
+    height: 54px;
+    width: 54px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+  color: #000;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+}
+
+button {
+  background-color: #1f66e5;
+  color: #fff;
+  border-color: #fff;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+/*Questionary container*/
+
+.questionary-container {
+  position: absolute;
+  left: 296px;
+  min-height: 140px;
+  width: 928px;
+  max-height: 1130px;
+  margin: 3rem auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px #000;
+  border-radius: 30px;
+}
+
+.sort-button {
+  position: relative;
+  left: 850px;
+  top: 5px;
+  width: 45px;
+  height: 20px;
+}
+
+.sort-button img {
+  position: relative;
+  left: -1px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+}
+
+/*Question container*/
+
+.question {
+  position: relative;
+  left: 42px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 856px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border: 3px solid #d9d9d9;
+  border-radius: 10px;
+}
+
+.question-num {
+  position: absolute;
+  left: 20px;
+  top: 11px;
+}
+
+.question-easy {
+  position: absolute;
+  right: 20px;
+  top: 6px;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  background-color: rgba(3, 160, 33, 0.6);
+  border-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.question-easy h2 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.question-medium {
+  position: absolute;
+  right: 20px;
+  top: 6px;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  background-color: rgba(213, 230, 0);
+  border-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.question-medium h2 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.question-hard {
+  position: absolute;
+  right: 20px;
+  top: 6px;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  background-color: rgba(211, 27, 13, 0.6);
+  border-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.question-hard h2 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.question-answered {
+  position: absolute;
+  right: 126px;
+  top: 11px;
+}
+
+.question-answered h2 {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  position: relative;
+  left: 0px;
+  top: -15px;
+}
+
+.question-answered img {
+  position: relative;
+  left: -20px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+.question-preview {
+  position: absolute;
+  left: 20px;
+  top: 50px;
+}
+
+.question-preview h3 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.answer-question {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  width: 120px;
+  height: 24px;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.answer-question h3 {
+  font-size: 16px;
+  color: #fff;
+}
