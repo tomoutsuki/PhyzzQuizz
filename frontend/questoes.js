@@ -11,7 +11,6 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
-<<<<<<< HEAD
 console.log(getParameterByName('fruta'));
 
 
@@ -19,12 +18,6 @@ let numero_aleatorio = Math.floor(Math.random() * 10);
 let numero = data.questoes[numero_aleatorio].numero;
 let conteudo = data.questoes[numero_aleatorio].conteudo;
 let alternativas = data.questoes[numero_aleatorio].alternativas;
-=======
-let id_questao = getParameterByName('questao')-1;
-let numero = data.questoes[id_questao].numero;
-let conteudo = data.questoes[id_questao].conteudo;
-let alternativas = data.questoes[id_questao].alternativas;
->>>>>>> eb294f61ab4afd1df4da117cfeb407e563495334
 
 var numero_questao = document.getElementById("numero_questao");
 numero_questao.textContent=numero;
