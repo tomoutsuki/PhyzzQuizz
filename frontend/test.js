@@ -1,6 +1,19 @@
 import data from './questoes.json' assert {type: 'json'};
 console.log(data.questoes);
 
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+console.log(getParameterByName('fruta'));
+
+
 let numero_aleatorio = Math.floor(Math.random() * 10);
 let numero = data.questoes[numero_aleatorio].numero;
 let conteudo = data.questoes[numero_aleatorio].conteudo;
