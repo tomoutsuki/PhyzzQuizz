@@ -120,7 +120,7 @@ main {
     line-height: 0rem;
 }
 
-.popup-correta {
+#popup-correta {
     position: absolute;
     width: 42%;
     height: auto;
@@ -146,7 +146,7 @@ main {
     margin-bottom: 17px;
 }
 
-.popup-incorreta {
+#popup-incorreta {
     position: absolute;
     width: 42%;
     height: auto;
