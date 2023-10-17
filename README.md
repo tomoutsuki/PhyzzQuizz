@@ -18,7 +18,7 @@ Este é uma aplicação de quiz sobre questões de Física do Ensino Médio, com
 | Nome    | RA      |
 |---------|---------|
 | [João Pedro Silva Cassimiro](https://github.com/JPCassimiro)    | 2142600 |
-| Matheus | b       |
+| Matheus de Bortoli Pastega | 2346559 |
 | [Rômulo Oliveira Souza](https://github.com/romulo-souza)  | 2144344 |
 | [Tom Outsuki](https://www.github.com/tomoutsuki)| 2312140|
 | [Yuri Silvestre Admertides](https://github.com/Yuri-Coding) | 2144379 |
@@ -35,16 +35,14 @@ Este é uma aplicação de quiz sobre questões de Física do Ensino Médio, com
 - Navegação entre telas geral e específica de questão;
 - Escolha de um problema para ser resolvido;
 - Indicação de que o problema escolhido já foi resolvido anteriormente;
-~- caso já tenha sido resolvido, perguntar se deseja resolver novamente;~
-~- permitir a consulta de problemas que já foram resolvidos pelo usuário;~
-~- alterar o nível de dificuldade de um problema já resolvido;~
-~- exibir a pontuação atual do usuário~
+
 ## Instalação
 <a name="installation"></a>
 
 Para executar o projeto, é necessário que tenha instalado a extensão **Live Server** do Visual Studio Code, ou outros softwares que permitam a configuração de servidor local.
 
-Visual Studio Code 1.83.1
+**Visual Studio Code** 1.83.1
+**Live Server** 5.6.1
 
     
 ## Screenshots
