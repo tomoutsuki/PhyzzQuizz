@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PhyzzQuizz - Questão X</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="question.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+        <script src="verificar.js" type="module"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img class="logo" src="assets/logo/phizzquizz.svg" alt="logo">
+                </a>
+                <a href="#">
+                    <img class="logo-text" src="assets/logo/phyzzquizz-text.png">
+                </a>
+            </div>
+            <img class="profile-icon" src="assets/profile.png" alt="profile">
+        </header>
+
+        <main>
+            <section class="questao">
+                <div class="nome-questao">
+                    <h3>Questão <span id="numero_questao"></span></h3>
+                    <button onclick="location.href='index.html'">Voltar</button>
+                </div>
+                <div class="conteudo-questao">
+                    <p><span id="conteudo_questao">Conteúdo da Questão</span></p>
+                </div>
+                <div class="botao-container">
+                    <button id="botao-1">
+                        A) <span id="alternativa1"></span>
+                    </button>
+                    <button id="botao-2">
+                        B) <span id="alternativa2"></span>
+                    </button>
+                    <button id="botao-3">
+                        C) <span id="alternativa3"></span>
+                    </button>
+                    <button id="botao-4">
+                        D) <span id="alternativa4"></span>
+                    </button>
+                </div>
+            </section>
+            <div class="animate" id="popup-correta">
+                <div class="icone-correta-container">
+                    <img class="icone-correta" src="assets/check.png" />
+                </div>
+                <h2>Resposta correta</h2>
+            </div>
+            <div class="animate" id="popup-incorreta">
+                <div class="icone-incorreta-container">
+                    <img class="icone-incorreta" src="assets/cancel.png">
+                </div>
+                <h2>Resposta incorreta</h2>
+            </div>
+        </main>
+    </body>
+
+    <script src="question.js" type="module"></script>
+</html>
