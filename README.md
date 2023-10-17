@@ -18,7 +18,7 @@ Este é uma aplicação de quiz sobre questões de Física do Ensino Médio, com
 | Nome    | RA      |
 |---------|---------|
 | [João Pedro Silva Cassimiro](https://github.com/JPCassimiro)    | 2142600 |
-| Matheus de Bortoli Pastega | 2346559 |
+| [Matheus de Bortoli Pastega](https://github.com/pastega) | 2346559 |
 | [Rômulo Oliveira Souza](https://github.com/romulo-souza)  | 2144344 |
 | [Tom Outsuki](https://www.github.com/tomoutsuki)| 2312140|
 | [Yuri Silvestre Admertides](https://github.com/Yuri-Coding) | 2144379 |
