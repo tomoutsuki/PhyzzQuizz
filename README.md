@@ -1,4 +1,3 @@
-
 # PhyzzQuizz
 ![icone](https://i.imgur.com/8Ql4W8l.png "Logo")
 
@@ -44,7 +43,7 @@ Este é uma aplicação de quiz sobre questões de Física do Ensino Médio, com
 
 Para executar o projeto, é necessário que tenha instalado a extensão **Live Server** do Visual Studio Code, ou outros softwares que permitam a configuração de servidor local.
 
-**Visual Studio Code** 1.83.1
+**Visual Studio Code** 1.83.1<br>
 **Live Server** 5.6.1
 
     
