@@ -4,7 +4,8 @@
   "description": "Este é uma aplicação de quiz sobre questões de Física do Ensino Médio.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
