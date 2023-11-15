@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEBUG - Add Question</title>
+  <style>
+    * {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-grow: 0;
+      text-align: center;
+    }
+
+    .blink_text{	
+      animation-name:blink;
+      width:280px;
+      animation-duration:2s;
+      animation-timing-function:ease-in;
+      animation-iteration-count:Infinite;
+      font-weight: bolder;
+      font-size: 16pt;
+    }
+    
+    @keyframes blink{
+      0%{color:orangered;}
+      50%{color: white;}
+      100%{color:orangered;}
+    }
+
+    h3 {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    textarea {
+      width: 600px;
+      height: 200px;
+      font-size: 12pt;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+  <script src="debug.js" defer></script>
+</head>
+<body>
+  
+  <header>
+    <img width="120" src="https://ehs.research.uiowa.edu/sites/ehs.research.uiowa.edu/files/styles/large/public/wysiwyg_uploads/under%20construction.png?itok=YRojMn6H" />
+    <h1 class="blink_text">CAUTION!<br>DEBUG MODE</h2>
+    <p>You've reached the backstage. Proceed with caution!</p>
+  </header>
+
+  <main>
+    <hr/>
+    <div>
+      <h3>Adicionar questões ao banco de dados</h3>
+      <form id="form_add_question">
+        <p>Conteúdo: </p><textarea name="content"></textarea><br/>
+        <p>Pré-visualização: </p><textarea name="preview"></textarea><br/>
+        <p>Dificuldade: </p><input name="difficulty" type="number" min="0" max="2"/><br/>
+        <p>Alternativas (Formato JSON): </p><textarea name="choices"></textarea>
+        <p>Resposta: </p><input name="answer" type="text" maxlength="1"/><br/>
+        <br/>
+        <input type="submit"/>
+      </form>
+    </div>
+    <hr/>
+    <div>
+      <h3>Remover questões do banco de dados</h3>
+      <form id="form_remove_question">
+        <p>ID da questão a ser removida: </p><input type="number" min="0"/><br/>
+        <br/>
+        <input type="submit"/>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>
