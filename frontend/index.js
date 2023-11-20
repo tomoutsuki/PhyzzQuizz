@@ -159,7 +159,7 @@ console.log(inputQuestions.length);
 switch (SortedEH) {
   case "ascending":
     diffSort();
-    for (let i = inputQuestions.length - 1; i > 0; i--) {
+    for (let i = inputQuestions.length - 1; i >= 0; i--) {
       createQuest(inputQuestions[i]);
     }
     sortButtonAscending.style.display = "block";
