@@ -26,6 +26,9 @@ let sortButtonAscending = document.getElementById("sort-button-ascending");
 let sortButtonDescending = document.getElementById("sort-button-descending");
 let sortButtonNumber = document.getElementById("sort-button-number");
 
+let confirmationPopup = document.getElementById("popup-confirmacao");
+let confirmationPopupButton = document.getElementById("confirmacao-confirmar");
+let confirmationPopupCancel = document.getElementById("confirmacao-voltar");
 //Funções
 
 //Função que coloca as questões na lista
@@ -49,9 +52,11 @@ const createQuest = (question) => {
   const questionEasy = document.createElement("button");
   const questionMedium = document.createElement("button");
   const questionHard = document.createElement("button");
+
   questionEasy.classList.add("question-easy");
   questionMedium.classList.add("question-medium");
   questionHard.classList.add("question-hard");
+
   if (question.dificuldade == 1) {
     questionMedium.classList.toggle("hide");
     questionHard.classList.toggle("hide");
@@ -110,6 +115,16 @@ const createQuest = (question) => {
   const answerQuestionBtn = document.createElement("button");
   answerQuestionBtn.classList.add("answer-question");
   answerQuestionBtn.addEventListener("click", function () {
+    if (question.respondido) {
+      confirmationPopup.style.display = "flex";
+      confirmationPopupButton.addEventListener("click", function() {
+        location.href = `question.html?questao=${question.numero}`;
+      });
+      confirmationPopupCancel.addEventListener("click", function() {
+        confirmationPopup.style.display = "none";
+      });
+      return;
+    }
     location.href = `question.html?questao=${question.numero}`;
   });
   questao.appendChild(answerQuestionBtn);

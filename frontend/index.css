@@ -255,7 +255,7 @@ main {
   border-radius: 15px;
   box-shadow: 0 0 0 5px #9D9D9D;
 
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
 
