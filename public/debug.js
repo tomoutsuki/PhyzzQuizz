@@ -15,7 +15,7 @@ form_add_question.addEventListener('submit', (event) => {
     content: form_data.get('content'),
     preview: form_data.get('preview'),
     difficulty: form_data.get('difficulty'),
-    choices: form_data.get('difficulty'),
+    choices: form_data.get('choices').trim(),
     answer: form_data.get('answer'),
   }
 
@@ -27,7 +27,7 @@ form_add_question.addEventListener('submit', (event) => {
     body: JSON.stringify(body_data)
   }
 
-  fetch(`${backend_url}/questions/add`, request_info)
+  fetch(`${backend_url}/question/`, request_info)
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
