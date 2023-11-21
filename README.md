@@ -65,9 +65,6 @@ Tela individual por questões.
 Feedback de questões, conforme resposta do usuário.
 ![question.html](https://i.imgur.com/LsDC9KZ.png "Feedback da Resposta")
 
-## Vídeo de apresentação
-Primeira entrega
-- https://drive.google.com/file/d/1RzVmC2jwxCTvZi6549tW99_U_gAfKN53/view?usp=sharing
-
-Segunda entrega
-- https://drive.google.com/file/d/1dooLpX_2ueenFv1gkZ1CDdnPeIzp6Tan/view?usp=drive_link
+## Vídeo das apresentações
+- 1 https://drive.google.com/file/d/1RzVmC2jwxCTvZi6549tW99_U_gAfKN53/view?usp=sharing
+- 2 https://drive.google.com/file/d/1dooLpX_2ueenFv1gkZ1CDdnPeIzp6Tan/view?usp=drive_link
