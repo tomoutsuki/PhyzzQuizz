@@ -33,7 +33,7 @@
       "dificuldade": 3,
       "conteudo": "(UFRN) Uma partícula percorre uma trajetória retilínea AB, onde M é o ponto médio, sempre no mesmo sentido e com movimento uniforme em cada um dos trechos AM e MB. A velocidade da partícula no trecho AM é de 3,0 m/s e no trecho MB é de 6,0 m/s. A velocidade média entre os pontos A e B vale:",
       "previa": "Uma partícula percorre...",
-      "respondido": false,
+      "respondido": true,
       "resposta": "a",
       "alternativas": {
         "a": "4,0 m/s",
