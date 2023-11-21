@@ -29,6 +29,8 @@ let sortButtonNumber = document.getElementById("sort-button-number");
 let confirmationPopup = document.getElementById("popup-confirmacao");
 let confirmationPopupButton = document.getElementById("confirmacao-confirmar");
 let confirmationPopupCancel = document.getElementById("confirmacao-voltar");
+var points = document.getElementById("points");
+
 //Funções
 
 //Função que coloca as questões na lista
@@ -123,6 +125,8 @@ const createQuest = (question) => {
       confirmationPopupCancel.addEventListener("click", function() {
         confirmationPopup.style.display = "none";
       });
+      let pontuacao = (50 * Math.pow(question.dificuldade, 2)) + 50;
+      points.textContent = pontuacao / 2;
       return;
     }
     location.href = `question.html?questao=${question.numero}`;
