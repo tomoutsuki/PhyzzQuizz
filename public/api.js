@@ -1,7 +1,7 @@
-const backend_url = 'http://localhost:3333'
+import { BACKEND_ADDR } from './environment.js'
 
 function route(path) {
-  return `${backend_url}/${path}`
+  return `${BACKEND_ADDR}/${path}`
 }
 
 /**
