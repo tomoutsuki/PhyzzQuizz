@@ -1,5 +1,7 @@
 //Importando json
-import data from "./questoes.json" assert { type: "json" };
+// import data from "./questoes.json" assert { type: "json" };
+
+import { Question } from './api.js'
 
 //Receber parâmetro por nome
 function getParameterByName(name, url) {
@@ -18,8 +20,8 @@ const questionList = document.querySelector("#question-list");
 const sortBtnF = document.querySelector("#sort-button-false");
 
 //Vars Globais
-
-let inputQuestions = data.questoes;
+// let inputQuestions = data.questoes;
+let inputQuestions = Question.getAll();
 let SortedEH = getParameterByName("sortedEH");
 
 let sortButtonAscending = document.getElementById("sort-button-ascending");
@@ -29,6 +31,7 @@ let sortButtonNumber = document.getElementById("sort-button-number");
 let confirmationPopup = document.getElementById("popup-confirmacao");
 let confirmationPopupButton = document.getElementById("confirmacao-confirmar");
 let confirmationPopupCancel = document.getElementById("confirmacao-voltar");
+
 //Funções
 
 //Função que coloca as questões na lista
@@ -118,7 +121,7 @@ const createQuest = (question) => {
     if (question.respondido) {
       confirmationPopup.style.display = "flex";
       confirmationPopupButton.addEventListener("click", function() {
-        location.href = `question.html?questao=${question.numero}`;
+        location.href = `question.html?id=${question.numero}`;
       });
       confirmationPopupCancel.addEventListener("click", function() {
         confirmationPopup.style.display = "none";
