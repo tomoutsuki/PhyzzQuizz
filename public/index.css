@@ -32,6 +32,13 @@ header {
   width: auto;
 }
 
+#score {
+  font-family: 'Inter';
+  font-size: 16pt;
+  color: white;
+  font-weight: bolder;
+}
+
 .profile-icon {
   height: 54px;
   width: 54px;

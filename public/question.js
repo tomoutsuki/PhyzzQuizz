@@ -1,5 +1,7 @@
 import data from './questoes.json' assert {type: 'json'};
-console.log(data.questoes);
+// console.log(data.questoes);
+
+
 
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
