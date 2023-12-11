@@ -1,73 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
 
-        <title>Homepage</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
 
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="index.css" />
+    <script type="module" src="index.js" defer></script>
 
-        <script type="module" src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-    
-    <body>
-        <header>
-            <div class="logo-container">
-                <a href="index.html">
-                    <img class="logo" src="assets/logo/phizzquizz.svg" alt="logo">
-                </a>
-                <a href="#">
-                    <img class="logo-text" src="assets/logo/phyzzquizz-text.png">
-                </a>
-            </div>
-            <div id="score">0 pts</div>
-            <img class="profile-icon" src="assets/profile.png" alt="profile" id="profile-img">
-        </header>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="assets/logo/phizzquizz.svg" alt="logo" />
+        </a>
+        <a href="#">
+          <img class="logo-text" src="assets/logo/phyzzquizz-text.png" />
+        </a>
+      </div>
+      <div id="score">0 pts</div>
+      <img
+        class="profile-icon"
+        src="assets/profile.png"
+        alt="profile"
+        id="profile-img"
+      />
+    </header>
 
-        <main>
-            <div class="questionary-container">
-                <div class="button-container">
-                    <h4>Ordenação</h4>
-                    <a href="index.html?sortedEH=descending">
-                        <button id="sort-button-ascending" class="sort-button">
-                            <img class="sort-button-img" src="./assets/sort-button/up.png" />
-                        </button>
-                    </a>
-                    <a href="index.html?sortedEH=number">
-                        <button id="sort-button-descending" class="sort-button">
-                            <img class="sort-button-img" src="./assets/sort-button/down.png" />
-                        </button>
-                    </a>
-                    <a href="index.html?sortedEH=ascending">
-                        <button id="sort-button-number" class="sort-button">
-                            <img class="sort-button-img" src="./assets/sort-button/number.png" />
-                        </button>
-                    </a>
-                </div>
-                <div id="question-list">
-                    <!--Recriar HTML a partir daqui-->
-                </div>
-            </div>
-            <div class="animate" id="popup-confirmacao">
-                <div class="icone-confirmacao-container">
-                    <img class="icone-confirmacao" src="assets/question.png">
-                </div>
-                <h2>Você já respondeu esta pergunta!</h2>
-                <p>Deseja responder novamente? A questão valerá apenas <span id="points">200</span> pontos. </p>
-                <div class="confirmacao-button-container">
-                    <button id="confirmacao-confirmar">Responder</button>
-                    <button id="confirmacao-voltar">Voltar</button>
-                </div>
-            </div>
-        </main>
-        
-    </body>
-    
+    <main>
+      <div class="questionary-container">
+        <div class="button-container">
+          <h4>Ordenação</h4>
+          <a href="index.html?sortedEH=descending">
+            <button id="sort-button-ascending" class="sort-button">
+              <img class="sort-button-img" src="./assets/sort-button/up.png" />
+            </button>
+          </a>
+          <a href="index.html?sortedEH=number">
+            <button id="sort-button-descending" class="sort-button">
+              <img
+                class="sort-button-img"
+                src="./assets/sort-button/down.png"
+              />
+            </button>
+          </a>
+          <a href="index.html?sortedEH=ascending">
+            <button id="sort-button-number" class="sort-button">
+              <img
+                class="sort-button-img"
+                src="./assets/sort-button/number.png"
+              />
+            </button>
+          </a>
+        </div>
+        <div id="question-list">
+          <!--Recriar HTML a partir daqui-->
+        </div>
+      </div>
+      <div class="animate" id="popup-diff">
+        <div class="icone-alert-container">
+          <img class="icone-alert" src="assets/alert.png" />
+        </div>
+        <h2>
+          Você não é capaz de responder uma pergunta dessa dificuldade ainda!
+        </h2>
+        <div class="confirma-alert-button-container">
+          <button id="ok-alert">OK</button>
+        </div>
+      </div>
+      <div class="animate" id="popup-confirmacao">
+        <div class="icone-confirmacao-container">
+          <img class="icone-confirmacao" src="assets/question.png" />
+        </div>
+        <h2>Você já respondeu esta pergunta!</h2>
+        <p>
+          Deseja responder novamente? A questão valerá apenas
+          <span id="points">200</span> pontos.
+        </p>
+        <div class="confirmacao-button-container">
+          <button id="confirmacao-confirmar">Responder</button>
+          <button id="confirmacao-voltar">Voltar</button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

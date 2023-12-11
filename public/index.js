@@ -15,35 +15,36 @@ function getParameterByName(name, url) {
 
 // Gerenciamento do estado da sessão
 
-let sessionState = JSON.parse(localStorage.getItem("session"))
+let sessionState = JSON.parse(localStorage.getItem("session"));
 
 if (!sessionState) {
-  sessionState = { 
+  sessionState = {
     currentScore: 0,
     levelOneQuestionSolved: false,
     levelTwoQuestionSolved: false,
-    questionSolvedTimes: {}
-  }    
-  
+    questionSolvedTimes: {},
+  };
+
   data.questoes.forEach((_, index) => {
-    sessionState.questionSolvedTimes[index + 1] = 0
+    sessionState.questionSolvedTimes[index + 1] = 0;
   });
-  
-  localStorage.setItem("session", JSON.stringify(sessionState))
+
+  localStorage.setItem("session", JSON.stringify(sessionState));
 }
 
 // Eventos da janela atual
-document.addEventListener('DOMContentLoaded', event => {
-  addQuestions()
-  document.getElementById('score').innerHTML = `${sessionState.currentScore} pts`
-})
+document.addEventListener("DOMContentLoaded", (event) => {
+  addQuestions();
+  document.getElementById(
+    "score"
+  ).innerHTML = `${sessionState.currentScore} pts`;
+});
 
-document.getElementById('profile-img').addEventListener('click', event => {
-  localStorage.clear()
-  alert('O sessão foi redefinda com sucesso!')
-  location.reload()
-})
-
+document.getElementById("profile-img").addEventListener("click", (event) => {
+  localStorage.clear();
+  alert("O sessão foi redefinda com sucesso!");
+  location.reload();
+});
 
 // Seleção dos elementos a serem manipulados
 
@@ -62,26 +63,28 @@ let confirmationPopupButton = document.getElementById("confirmacao-confirmar");
 let confirmationPopupCancel = document.getElementById("confirmacao-voltar");
 let points = document.getElementById("points");
 
+let alertDiffPopup = document.getElementById("popup-diff");
+let alertDiffPopupBtn = document.getElementById("ok-alert");
 // Constantes globais
 
 const inputQuestions = data.questoes;
 
 const difficultyWord = {
-  1: 'fácil',
-  2: 'médio', 
-  3: 'difícil'
-}
+  1: "fácil",
+  2: "médio",
+  3: "difícil",
+};
 
 const difficultyScore = {
   1: 100,
   2: 250,
-  3: 500
-}
+  3: 500,
+};
 
 //Função que coloca as questões na lista
 function createQuestion(question) {
-//#region Creating Element Manually via Javascript 
-  
+  //#region Creating Element Manually via Javascript
+
   //Time to suffer, recrie o HTML na mão
   //Criando a div de uma questão
   const questao = document.createElement("div");
@@ -162,7 +165,7 @@ function createQuestion(question) {
   //Colocando o botão
   const answerQuestionBtn = document.createElement("button");
   answerQuestionBtn.classList.add("answer-question");
-  
+
   questao.appendChild(answerQuestionBtn);
 
   //Colocando o texto no botão
@@ -172,42 +175,50 @@ function createQuestion(question) {
 
   //Colocando a questão na lista
   questionList.appendChild(questao);
-//#endregion
+  //#endregion
 
   // Evento acionado pelo botão responder
-  answerQuestionBtn.addEventListener('click', () => {answerButtonPressed(question)})
-};
+  answerQuestionBtn.addEventListener("click", () => {
+    answerButtonPressed(question);
+  });
+}
 
 function answerButtonPressed(question) {
   // Verifica se a questão pode ser respondida
   const difficulty = question.dificuldade;
 
   const difficultyAndFlag = [
-    {difficulty: 2, flag: sessionState.levelOneQuestionSolved},
-    {difficulty: 3, flag: sessionState.levelTwoQuestionSolved},
-  ]
+    { difficulty: 2, flag: sessionState.levelOneQuestionSolved },
+    { difficulty: 3, flag: sessionState.levelTwoQuestionSolved },
+  ];
 
-  let allowed = true
+  let allowed = true;
 
-  difficultyAndFlag.forEach(element => {
-    if (difficulty == element.difficulty) 
+  difficultyAndFlag.forEach((element) => {
+    if (difficulty == element.difficulty)
       if (!element.flag) {
-        allowed = false
-        return
+        allowed = false;
+        return;
       }
-    })
-    
+  });
+
   if (!allowed) {
-    showNotAllowedBanner(difficulty)
-    return
-  } 
+    //showNotAllowedBanner(/*difficulty*/);
+    alertDiffPopup.style.display = "flex";
+
+    alertDiffPopupBtn.addEventListener("click", () => {
+      alertDiffPopup.style.display = "none";
+    });
+    return;
+  }
 
   // Se a questão já foi respondida anteriormente,
   // mostra um popup de confirmação
 
   if (sessionState.questionSolvedTimes[question.numero] > 0) {
-
-    points.innerHTML = difficultyScore[question.dificuldade] / Math.pow(2, sessionState.questionSolvedTimes[question.numero])
+    points.innerHTML =
+      difficultyScore[question.dificuldade] /
+      Math.pow(2, sessionState.questionSolvedTimes[question.numero]);
 
     confirmationPopup.style.display = "flex";
     confirmationPopupButton.addEventListener("click", () => {
@@ -216,21 +227,26 @@ function answerButtonPressed(question) {
     confirmationPopupCancel.addEventListener("click", () => {
       confirmationPopup.style.display = "none";
     });
-    return
+    return;
   }
 
   // Redireciona para a questão
   location.href = `question.html?questao=${question.numero}`;
 }
 
-function showNotAllowedBanner(difficulty) {
-  alert(`Não é possível responder questões do nível ${difficultyWord[difficulty]} ainda.`)
+function showNotAllowedBanner(/*difficulty*/) {
+  alertDiffPopup.style.display = "flex";
+
+  alertDiffPopupBtn.addEventListener("click", () => {
+    confirmationPopup.style.display = "none";
+  });
+  //alert(`Não é possível responder questões do nível ${difficultyWord[difficulty]} ainda.`)
 }
 
 //Função que controla a ordenação da lista
 function diffSort() {
   inputQuestions.sort((a, b) => a.dificuldade - b.dificuldade);
-};
+}
 
 // Adiciona as questões
 
@@ -243,7 +259,7 @@ function addQuestions() {
       }
       sortButtonAscending.style.display = "block";
       break;
-  
+
     case "descending":
       diffSort();
       for (let i = 0; i < inputQuestions.length; i++) {
@@ -251,7 +267,7 @@ function addQuestions() {
       }
       sortButtonDescending.style.display = "block";
       break;
-  
+
     default:
       for (let i = 0; i < inputQuestions.length; i++) {
         createQuestion(inputQuestions[i]);
